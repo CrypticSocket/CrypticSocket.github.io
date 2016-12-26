@@ -1,0 +1,63 @@
+body {
+	width: 99.9%;
+	min-width: 900px;
+	max-width: 1980px;
+	font-family: serif, times new roman, script;
+	font-weight: normal;
+	font-size: 16px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+#mainContainer {
+	width:100%;
+	background-image: #;
+	background-color: white;
+}
+
+
+#header_web {
+	width: 87%;
+	height: 70%;
+}
+
+nav.navigation {
+	text-align: center;
+	background-color: black;
+	position: relative;
+	top:-20px;
+}
+
+nav.navigation ul {
+	list-style: none;
+}
+
+nav.navigation ul li {
+	display: inline-block;
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 0.8%;
+}
+
+nav.navigation ul li a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+}
+
+nav.navigation ul li a:hover {
+	color:red;
+}
+
+h1.title1 {
+	font-family: cursive;
+	color: orange;
+	font-size: 45px;
+}
+p.p1 {
+	font-family: fantasy;
+	color:pink;
+	font-size: 30px;
+}
