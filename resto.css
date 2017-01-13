@@ -15,6 +15,20 @@ body {
 	background-color: white;
 }
 
+.header_div {
+	position:relative;
+	width: auto;
+	height: auto;
+	
+}
+
+.title1 {
+	position: absolute;
+	bottom: 0;
+	font-family: cursive;
+	color: orange;
+	font-size: 45px;
+}
 
 #header_web {
 	width: 87%;
@@ -48,14 +62,9 @@ nav.navigation ul li a {
 }
 
 nav.navigation ul li a:hover {
-	color:red;
+	color:blue;
 }
 
-h1.title1 {
-	font-family: cursive;
-	color: orange;
-	font-size: 45px;
-}
 p.p1 {
 	font-family: fantasy;
 	color:pink;
