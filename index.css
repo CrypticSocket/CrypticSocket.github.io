@@ -1,0 +1,160 @@
+body{
+    width: 99%;
+    margin: 1px;
+    background-color: antiquewhite;
+}
+
+header{
+    text-align: center;
+    font-size: 36px;
+    font-family: cursive;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 4%;
+    transition-delay: 50ms;
+    z-index: -1;
+}
+
+#left{
+    float: left;
+    display: flex;
+}
+
+#right{
+    float: right;
+    display: flex;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: none;
+    border: 1px black solid;
+    transition-delay: 0s;
+}
+
+.circle:hover{
+    background-color: aqua;
+}
+
+#square{
+    height: 100px;
+    width: 100px;
+    border: 1px black solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition-duration: 2s;
+    display: inline-block;
+}
+
+#square:hover{
+    background-color: aqua;
+    width: 200px;
+    transform-origin:center;
+    transform: rotate(360deg);
+    border-radius: 300px;
+}
+
+#square:active{
+    color: red;
+}
+
+nav{
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 1px black solid;
+    border-radius: 30px
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: monospace; 
+    font-size: 20px;
+}
+
+nav ul li:hover{
+    color: gray;
+}
+
+/*
+body {
+	width: 99.9%;
+	min-width: 900px;
+	max-width: 1980px;
+	font-family: serif, times new roman, script;
+	font-weight: normal;
+	font-size: 16px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+#mainContainer {
+	width:100%;
+	background-image: #;
+	background-color: white;
+}
+
+.header_div {
+	position:relative;
+	width: auto;
+	height: auto;
+	
+}
+
+.title1 {
+	position: absolute;
+	bottom: 0;
+	font-family: cursive;
+	color: orange;
+	font-size: 45px;
+}
+
+#header_web {
+	width: 87%;
+	height: 70%;
+}
+
+nav.navigation {
+	text-align: center;
+	background-color: black;
+	position: relative;
+	top:-20px;
+}
+
+nav.navigation ul {
+	list-style: none;
+}
+
+nav.navigation ul li {
+	display: inline-block;
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 0.8%;
+}
+
+nav.navigation ul li a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+}
+
+nav.navigation ul li a:hover {
+	color:blue;
+}
+
+p.p1 {
+	font-family: fantasy;
+	color:pink;
+	font-size: 30px;
+}
+*/
