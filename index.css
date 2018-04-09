@@ -1,29 +1,88 @@
 body{
-    width: 99%;
+    width: 99.8%;
+    height: 99vh;
     margin: 1px;
     background-color: antiquewhite;
+    display: flex;
 }
 
 header{
+    width: 99.9%;
+    display: flex;
+}
+
+p1{
     text-align: center;
-    font-size: 36px;
+    font-size: 235%;
     font-family: cursive;
-    position: fixed;
-    left: 0%;
-    right: 0%;
     top: 4%;
-    transition-delay: 50ms;
     z-index: -1;
 }
 
+footer{
+    width: 99%;
+    display: inline-block;
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainContainer{
+    width: 99.9%;
+}
+
+#navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
 #left{
-    float: left;
     display: flex;
 }
 
 #right{
-    float: right;
     display: flex;
+}
+
+#bot{
+    width: 99.8%;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+#bot_left{
+    float: left;
+    display: flex;
+}
+
+.twoBotL{
+    display: 
+}
+
+.oneBotL{
+    position: relative;
+}
+
+#center{
+}
+
+#bot_right{
+    display: flex;
+}
+
+.twoBotR{
+    position: relative;
+}
+
+.oneBotR{
+    position: relative;
 }
 
 .circle{
@@ -39,27 +98,29 @@ header{
     background-color: aqua;
 }
 
-#square{
-    height: 100px;
-    width: 100px;
+#projectSq{
+    height: 150px;
+    width: 150px;
     border: 1px black solid;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition-duration: 2s;
-    display: inline-block;
 }
 
-#square:hover{
+#AboutMe{
+    height: 150px;
+    width: 150px;
+    border: 1px black solid;
+}
+
+#GetInTouch{
+    height: 150px;
+    width: 150px;
+    border: 1px black solid;
+}
+
+#projectSq:hover{
     background-color: aqua;
-    width: 200px;
     transform-origin:center;
     transform: rotate(360deg);
     border-radius: 300px;
-}
-
-#square:active{
-    color: red;
 }
 
 nav{
