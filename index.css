@@ -3,12 +3,12 @@ body{
     height: 99vh;
     margin: 1px;
     background-color: antiquewhite;
-    display: flex;
 }
 
 header{
     width: 99.9%;
     display: flex;
+    position: absolute;
 }
 
 p1{
@@ -32,6 +32,8 @@ footer{
 
 #mainContainer{
     width: 99.9%;
+    height: 100vh;
+    display: flex;
 }
 
 #navBar{
