@@ -193,12 +193,15 @@ footer{
 
 .center{
     display: flex;
+    align-items: flex-end;
+    padding: 0px;
 }
 
 h1{
     padding: 0px;
     vertical-align: bottom;
     font-family: monospace;
+    margin: 0px;
 }
 
 #bot_right{
