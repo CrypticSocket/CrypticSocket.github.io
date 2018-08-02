@@ -1,7 +1,7 @@
 body{
     width: 99.8%;
     height: 99vh;
-    margin: 1px;
+    margin: 0px;
     background-color: antiquewhite;
 }
 
@@ -38,7 +38,7 @@ footer{
 }
 
 #navBar{
-    width: 100%;
+    width: 99.8%;
     display: flex;
     justify-content: space-around;
 }
@@ -202,6 +202,8 @@ h1{
     vertical-align: bottom;
     font-family: monospace;
     margin: 0px;
+    font-size: 250%;
+    color: darkblue;
 }
 
 #bot_right{
@@ -222,7 +224,7 @@ h1{
     border-radius: 100px;
     background-color: none;
     border: 1px black solid;
-    transition-delay: 0s;
+    transition-duration: 1s;
 }
 
 .circle:hover{
@@ -230,31 +232,73 @@ h1{
 }
 
 #projectSq{
-    height: 150px;
-    width: 150px;
+    height: 20vh;
+    width: 30vw;
     border: 1px black solid;
+    transition-duration: 3s;
+    margin: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectSq a {
+    font-size: 3vw;
 }
 
 #AboutMe{
-    height: 150px;
-    width: 150px;
+    display: flex;
+    height: 20vh;
+    width: 30vw;
     border: 1px black solid;
+    transition-duration: 3s;
+    margin: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutMe a {
+    font-size: 3vw;
+    padding: inherit;
+}
+
+#AboutMe a:hover{
+    color: aqua;
 }
 
 #GetInTouch{
-    height: 150px;
-    width: 150px;
+    display: flex;
+    height: 20vh;
+    width: 30vw;
     border: 1px black solid;
+    transition-duration: 3s;
+    margin: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+#GetInTouch a {
+    font-size: 3vw;
 }
 
 #projectSq:hover{
     background-color: aqua;
     transform-origin:center;
-    transform: rotate(360deg);
     border-radius: 300px;
 }
 
-nav{
+#AboutMe:hover{
+    background-color: aqua;
+    transform-origin:center;
+    border-radius: 300px;
+}
+
+#GetInTouch:hover{
+    background-color: aqua;
+    transform-origin:center;
+    border-radius: 300px;
+}
+
+/*nav{
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -281,7 +325,8 @@ nav ul a:hover{
     color: gray;
 }
 
-/*
+
+
 Just for reference
 body {
 	width: 99.9%;
