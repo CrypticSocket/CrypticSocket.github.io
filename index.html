@@ -1,104 +1,126 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Saket's Rep</title>
-        <meta content="Projects">
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     </head>
     <body>
-        <header>
-            <div id="top">
-                <div id="left">
-                    <div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle" id="left3"></div>
-                </div>
-                <p1>Welcome!</p1>
-                <div id="right">
-
-                    <div class="circle"></div>
-                    <div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>
-        </header>
         
-        <div id="mainContainer">
-            <div id="navBar">
-                <div id="projectSq">
-                    <a>Projects</a>
+        <!--Button for collapsing the menu-->
+        <nav class="navbar navbar-invert navbar-static-top" role="navigation">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="index.html">Portfolio</a>
                 </div>
-                <div id="AboutMe">
-                    <a>About Me</a>
-                </div>
-                <div id="GetInTouch">
-                    <a>Get In Touch</a>
-                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-first">
+                    <span class="sr-only">Toggle button</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </div>
-<!--
-        <nav class="container">
-            <ul id="navbar">
-                <li>Projects</li>
-                <li href="#">About Me</li>
-                <li>Get In Touch</li>
-                <a href="#">Projects</a>
-                <a href="#">About Me</a>
-                <a href="#">Get In Touch</a>
-
-            </ul>
+            <div class="collapse navbar-collapse navbar-collapse-first navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a>Second</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a>DD 1</a></li>
+                            <li><a>DD 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </nav>
--->
-        <footer id="bot">
-<!--
-            <div id="bot_left">
-            <div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="twoBotL">
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="oneBotL">
-                <div class="circle" id="left3"></div>
-            </div>
-            </div>
--->
-            <div id="bot_left">
-                <div class="circle" id="bl1"></div>
-                <div class="circle" id="bl2"></div>
-                <div class="circle" id="bl3"></div>
-                <div class="circle" id="bl4"></div>
-                <div class="circle" id="bl5"></div>
-                <div class="circle" id="bl6"></div>
-            </div>
-            <div class="center">
-                <h1>Saket Vaibhav</h1>
-            </div>
-            <div id="bot_right">
-                    <div class="circle" id="br1"></div>
-                <div class="circle" id="br2"></div>
-                <div class="circle" id="br3"></div>
-                <div class="circle" id="br4"></div>
-                <div class="circle" id="br5"></div>
-                <div class="circle" id="br6"></div>
-            </div>
-        </footer>
+        
+        <!--JUMBOTRON SECTION-->
+        <div class="jumbotron">
+            <h1 class="text-center">Saket Vaibhav</h1>
+            <p class="text-center">Developer. Electical and Electonics Engineer. Tech Enthusiast.</p>
+            <p></p>
+        </div>
+        
+        <!--About Me Section-->
+        <div id="aboutMe" class="container-fluid text-center">
+            <h1 class="text-center">About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet nisl. Praesent sed leo congue, fringilla eros eu, tempus metus. Nam mollis odio ipsum, non vehicula ipsum accumsan sodales. Morbi varius vitae elit euismod cursus. Donec a dapibus justo, in facilisis nisi. Suspendisse ut turpis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui risus, tincidunt at odio ut, ultrices dignissim ipsum. Cras ultrices erat nec leo luctus varius. Nulla sollicitudin tincidunt nulla, ut porta mauris volutpat vitae. Suspendisse ornare dolor sit amet massa venenatis pulvinar.</p>
+        </div>
+        <div id="Projects" class="container-fluid">
+            <h1 class="text-center">Projects</h1>
+            <hr>
+            <h2 class="text-center">Android Projects</h2>
+        </div>
+        
+        
+        <!--STYLE SECTION-->
+        <style>
+            .navbar{
+                margin-bottom: 0px;
+                background-color: dimgray;
+            }
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            
+            a:hover{
+                color: black;
+                text-decoration: none;
+            }
+            
+            body{
+                font: 20px Montserrat, sans-serif;
+                color: white;
+            }
+            
+            .jumbotron{
+                padding: 200px;
+                background-color: #6ed3cf;
+                margin: 0px;
+            }
+            
+            #aboutMe{
+                background-color: #9068be;
+                padding: 100px;
+            }
+            
+            h1{
+                font-size: 50px;
+            }
+            
+            #Projects{
+                background-color: #e1e8f0;
+                padding: 100px;
+                color:dimgray;
+            }
+            
+            hr {
+                display: block;
+                border-top: 1px solid gray;
+            }
+        
+        </style>
+        
+        
+        <!--SCRIPT SECTION-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
+
+
+
+<!--Color Scheme Used-->
+<!--
+Light Blue Green: #6ed3cf
+
+Soft Purple: #9068be
+
+Tasty Eighties Grey: #e1e8f0
+
+Rich Red: #e62739
+-->
