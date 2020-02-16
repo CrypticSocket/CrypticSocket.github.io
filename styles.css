@@ -1,0 +1,81 @@
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+    grid-template-areas: ". content content content content .";
+}
+
+.content{
+    grid-area: content;
+    align-content: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 2em;
+    font-weight: medium;
+    color: #05C;
+}
+
+.nav{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: #333;
+}
+
+.nav ol{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.nav ol li{
+    list-style-type: none;
+
+}
+
+.subtitle p{
+    text-align: center;
+    margin: 10px;
+    color: #666;
+}
+
+.protitle{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.progrid{
+    display: grid;
+    margin: 0 auto;
+    gap: 100px;
+    padding: 0 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.procard{
+    text-align: center;
+    border: 2px solid #05C;
+}
+
+.procard h3{
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #80E;
+}
+
+.prodesc{
+    font-size: 0.9em;
+    color: #333;
+}
