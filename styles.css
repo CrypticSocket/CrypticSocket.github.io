@@ -79,3 +79,30 @@ body{
     font-size: 0.9em;
     color: #333;
 }
+
+
+/* For Smaller Screens */
+
+@media (max-width: 950px){
+    .progrid{
+        gap: 50px;
+        padding: 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px)
+{
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding: 0 10px;
+        grid-template-areas: "content";
+    }
+
+    .progrid{
+        gap:20px;
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+    }
+}
