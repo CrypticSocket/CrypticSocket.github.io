@@ -1,0 +1,81 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.eighty{
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+}
+
+.logoside{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.linksside{
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    align-self: center;
+    width: 30%;
+}
+
+.burger div{
+    background-color: black;
+    width: 15px;
+    height: 2px;
+    margin: 3px;
+}
+
+.burger{
+    display: none;
+    transition-duration: 1s;
+}
+
+.burger:hover{
+    transform: rotate(90deg) translateX(-2px) translateY(3px);
+}
+
+/* Main */
+
+.heading{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    margin-top: 2em;
+    color:#333;
+}
+
+@media screen and (max-width:768px)
+{
+    .linksside{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px)
+{
+    .linksside{
+        width: 40%;
+    }
+}

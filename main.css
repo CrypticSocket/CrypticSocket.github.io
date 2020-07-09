@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    --cardHeight : 200px;
+}
+
+/* Fonts */
+
+@font-face{
+    font-family: 'MontserratL';
+    font-weight: normal;
+    src: url('./fonts/Montserrat-Light.ttf'); 
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: normal;
+    src: url('./fonts/Montserrat-Regular.ttf'); 
+}
+
+@font-face{
+    font-family: 'Reenie';
+    font-weight: normal;
+    src: url('./fonts/ReenieBeanie-Regular.ttf'); 
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    background-color: #FFEBCD;
+    padding: 0 0.5rem;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+nav h2{
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    font-family: 'Reenie',cursive;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+
+    nav h2:hover{
+        background-color: #FDA;
+    }
+
+.links ul{
+    display: flex;
+}
+
+.links ul li{
+    list-style: none;
+    padding: 0.5rem;
+    font-family: 'MontserratL', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+    .links ul li:hover{
+        background-color: #FDA;
+    }
+
+/* Main */
+
+#intro{
+    min-height: 100vh;
+}
+
+.introText{
+    padding: 0em 0 1em 0;
+    font-size: 2em;
+    font-family: 'MontserratL', sans-serif;
+}
+
+.thicker{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FA8835;
+}
+
+.smaller{
+    font-size: 0.8em;
+}
+
+.social i{
+    color: #ebc07c;
+    font-size: 1.6em;
+    margin-right: 0.5em;
+}
+
+    .social i:hover{
+        color: #e9b259;
+    }
+
+#mail{
+    display: none;
+}
+
+.mypic{
+    height: 300px;
+    object-fit: contain;
+    /* background-color: #ebc07c; */
+    border: 4px solid #EBC07C;
+    justify-self: right;
+}
+
+.linearE{
+    padding: 5em 0 2em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.textSide{
+    align-self: center;
+}
+
+.me{
+    font-family: 'MontserratL', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.3em;
+    margin-bottom: 2em;
+}
+
+.thickline{
+    width: 200px;
+    height: 5px;
+    background-color: #ebc07c;
+}
+
+/* Projects */
+
+#projects{
+    background-color: #FFEBCD;
+    /* min-height: 100vh; */
+    min-height: 50vh;
+    padding-bottom: 2em;
+}
+
+.heading{
+    padding: 1em 0;
+    font-size: 2em;
+    font-family: 'MontserratL', sans-serif;
+    text-align: center;
+}
+
+.proList{
+    width: 50%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    font-family: 'MontserratL', sans-serif;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.proList li{
+    margin: 0 0.5em;
+}
+
+    .proList li:hover, .proList li:focus, .proList li:active{
+        cursor: pointer;
+        border-bottom: 2px solid black;
+    }
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: #045;
+    border-radius: 10px;
+    padding: 0.5em;
+    color: #DADADA;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .card:hover{
+        background-color: #034;
+        transform: translateY(-2px);
+    }
+
+.projectcards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+
+.pName{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.tag{
+    font-size: 0.8em;
+    border: 0.5px solid #DADA;
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+
+.desc{
+    padding-bottom: 1em;
+}
+
+#more{
+    padding: 0.5em 1em;
+    margin: auto;
+    display: block;
+    background-color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 1px solid #ff9d00;
+    box-shadow: 0px 0px 4px #e25fda;
+    color: #ff9d00;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    display: none;
+}
+
+    #more:hover{
+        background-color: #ff9d00;
+        color: white;
+    }
+
+/* Contact */
+input[type="text"], input[type="email"]
+{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 1.2em;
+    margin: 0.2em;
+    width: calc(100%/3 - 0.2em*3);
+    min-width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ebc07c;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, #message:hover
+{
+    border: 1px solid #f5a017;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, #message:focus
+{
+    border: 1px solid #f5a017;
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, #message::placeholder
+{
+    color: #ff9d00;
+    opacity: 0.9;
+}
+
+#message{
+    padding: 0.5em;
+    font-size: 1.2em;
+    margin: 0.2em;
+    width: calc(100% - 0.2em*3);
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ebc07c;
+    margin-bottom: 1em;
+}
+
+#submit{
+    padding: 0.5em 1em;
+    margin: auto;
+    display: block;
+    background-color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 1px solid #ff9d00;
+    box-shadow: 0px 0px 4px #e25fda;
+    color: #ff9d00;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+    #submit:hover{
+        background-color: #ff9d00;
+        color: white;
+    }
+
+/* Sizes */
+
+.sixty{
+    width: 60%;
+}
+
+.eighty{
+    width: 80%;
+}
+
+.center{
+    margin: auto;
+}
+
+.tcenter{
+    text-align: center;
+}
+
+.padded{
+    padding: 5em 0 2em 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:768px)
+{
+    html{
+        --cardHeight: 150px;
+    }
+    
+    body{
+        font-size: 12px;
+    }
+
+    .eighty{
+        width: 90%;
+    }
+
+    .eighty .sixty{
+        width: 100%;
+    }
+    
+    .eighty .eighty{
+        width: 100%;
+    }
+
+    .linearE{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .mypic{
+        margin-top: 1em;
+        justify-self: center;
+    }
+
+    .card{
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+    }
+
+    #mail{
+        display: unset;
+    }
+
+    .visible{
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: height 1s ease-out;
+    }
+
+    #more{
+        display: block;
+    }
+
+}
