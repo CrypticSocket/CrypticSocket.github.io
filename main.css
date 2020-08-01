@@ -79,11 +79,14 @@ nav h2{
 
 #intro{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .introText{
     padding: 0em 0 1em 0;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'MontserratL', sans-serif;
 }
 
@@ -99,7 +102,8 @@ nav h2{
 
 .social i{
     color: #ebc07c;
-    font-size: 1.6em;
+    font-size: 2em;
+    margin-bottom: 1.5em;
     margin-right: 0.5em;
 }
 
@@ -112,7 +116,7 @@ nav h2{
 }
 
 .mypic{
-    height: 300px;
+    height: 500px;
     object-fit: contain;
     /* background-color: #ebc07c; */
     border: 4px solid #EBC07C;
@@ -120,7 +124,8 @@ nav h2{
 }
 
 .linearE{
-    padding: 5em 0 2em 0;
+    /* padding: 5em 0 2em 0; */
+    margin-bottom: 3em;
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
@@ -134,7 +139,6 @@ nav h2{
     font-size: 1.3em;
     text-align: justify;
     line-height: 1.3em;
-    margin-bottom: 2em;
 }
 
 .thickline{
@@ -152,11 +156,23 @@ nav h2{
     padding-bottom: 2em;
 }
 
-.heading{
+.topic{
     padding: 1em 0;
+    font-size: 2.2em;
+    font-family: 'MontserratL', sans-serif;
+    text-align: center;
+}
+
+.heading{
+    padding: 2em 0 0.5em 0;
     font-size: 2em;
     font-family: 'MontserratL', sans-serif;
     text-align: center;
+}
+
+.subhead{
+    font-size: 1.3em;
+    padding: 0.8em 0 0.4em;
 }
 
 .proList{
@@ -315,6 +331,10 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, #message::pla
     width: 60%;
 }
 
+.seventy {
+    width: 70%;
+}
+
 .eighty{
     width: 80%;
 }
@@ -347,7 +367,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, #message::pla
         width: 90%;
     }
 
-    .eighty .sixty{
+    .eighty .sixty .seventy{
         width: 100%;
     }
     
@@ -360,8 +380,17 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, #message::pla
         text-align: center;
     }
 
+    #intro{
+        margin-top: 4em;
+    }
+
+    .introText{
+        font-size: 2.2em;
+    }
+
     .mypic{
         margin-top: 1em;
+        height: 300px;
         justify-self: center;
     }
 

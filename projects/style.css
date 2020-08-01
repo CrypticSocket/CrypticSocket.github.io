@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    --cardHeight : 200px;
+}
+
+/* Fonts */
+
+@font-face{
+    font-family: 'MontserratL';
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Light.ttf'); 
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Regular.ttf'); 
+}
+
+@font-face{
+    font-family: 'Reenie';
+    font-weight: normal;
+    src: url('../fonts/ReenieBeanie-Regular.ttf'); 
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    background-color: #FFEBCD;
+    padding: 0 0.5rem;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+nav h2{
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    font-family: 'Reenie',cursive;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+
+    nav h2:hover{
+        background-color: #FDA;
+    }
+
+.links ul{
+    display: flex;
+}
+
+.links ul li{
+    list-style: none;
+    padding: 0.5rem;
+    font-family: 'MontserratL', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+    .links ul li:hover{
+        background-color: #FDA;
+    }
+
+/* Projects */
+
+#projectinfo{
+    font-family: 'MontserratL', sans-serif;
+    padding: 2em 0;
+}
+
+#projects{
+    background-color: #FFEBCD;
+    /* min-height: 100vh; */
+    min-height: 50vh;
+    padding-bottom: 2em;
+}
+
+.topic{
+    padding: 1em 0;
+    font-size: 2.2em;
+    font-family: 'MontserratL', sans-serif;
+    text-align: center;
+}
+
+.heading{
+    padding: 2em 0 0.5em 0;
+    font-size: 2em;
+    font-family: 'MontserratL', sans-serif;
+    text-align: center;
+}
+
+.tabulate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    /* columns */
+}
+
+.explainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.explainpic{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.nonGrid{
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    text-align: justify;
+    margin: auto;
+}
+
+/* Sizes */
+
+.sixty{
+    width: 60%;
+}
+
+.seventy {
+    width: 70%;
+}
+
+.eighty{
+    width: 80%;
+}
+
+.center{
+    margin: auto;
+}
+
+.tcenter{
+    text-align: center;
+}
+
+.padded{
+    padding: 5em 0 2em 0;
+}
+
+@media screen and (max-width:768px)
+{
+    html{
+        --cardHeight: 150px;
+    }
+    
+    body{
+        font-size: 12px;
+    }
+
+    .eighty{
+        width: 90%;
+    }
+
+    .eighty .sixty .seventy{
+        width: 100%;
+    }
+    
+    .eighty .eighty{
+        width: 100%;
+    }
+
+    .linearE{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    #intro{
+        margin-top: 4em;
+    }
+
+    .introText{
+        font-size: 2.2em;
+    }
+
+    .mypic{
+        margin-top: 1em;
+        height: 300px;
+        justify-self: center;
+    }
+
+    .card{
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+    }
+
+    #mail{
+        display: unset;
+    }
+
+    .visible{
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: height 1s ease-out;
+    }
+
+    #more{
+        display: block;
+    }
+
+}
